@@ -1,4 +1,9 @@
-import '../css/style.css';
+import cssText from '../css/style.css?inline';
+
+// Injeta o CSS completo de forma não-bloqueante
+const styleEl = document.createElement('style');
+styleEl.textContent = cssText;
+document.head.appendChild(styleEl);
 
 document.addEventListener('DOMContentLoaded', () => {
   // === NAVBAR SCROLL EFFECT ===
