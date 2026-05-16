@@ -1,9 +1,15 @@
 import cssText from '../css/style.css?inline';
 
-// Injeta o CSS completo de forma não-bloqueante
-const styleEl = document.createElement('style');
-styleEl.textContent = cssText;
-document.head.appendChild(styleEl);
+// Injeta o CSS de forma otimizada (sem reflow forçado)
+if (document.adoptedStyleSheets !== undefined) {
+  const sheet = new CSSStyleSheet();
+  sheet.replaceSync(cssText);
+  document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+} else {
+  const styleEl = document.createElement('style');
+  styleEl.textContent = cssText;
+  document.head.appendChild(styleEl);
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   // === NAVBAR SCROLL EFFECT ===
