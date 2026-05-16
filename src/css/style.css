@@ -1038,3 +1038,91 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Assinatura BeM Digital - Estilo Selo Premium */
+.bem-signature-container {
+  background: #07111d;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bem-badge {
+  display: flex;
+  align-items: center;
+  background: rgba(10, 25, 41, 0.7);
+  border: 1px solid rgba(85, 215, 255, 0.15);
+  border-radius: 100px;
+  padding: 12px 28px 12px 20px;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.bem-badge:hover {
+  transform: translateY(-5px);
+  border-color: rgba(85, 215, 255, 0.5);
+  background: rgba(10, 25, 41, 0.9);
+  box-shadow: 0 15px 40px rgba(85, 215, 255, 0.15);
+}
+
+.bem-logo-side img {
+  height: 32px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(85, 215, 255, 0.3));
+}
+
+.bem-divider {
+  width: 1px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 20px;
+}
+
+.bem-text-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bem-label {
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.bem-brand {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .bem-signature-container {
+    padding-bottom: 100px; /* Espaço para a barra mobile */
+  }
+  
+  .bem-badge {
+    padding: 10px 20px;
+  }
+  
+  .bem-divider {
+    margin: 0 15px;
+  }
+  
+  .bem-brand {
+    font-size: 14px;
+  }
+  
+  .bem-label {
+    font-size: 8px;
+  }
+}
