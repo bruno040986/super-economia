@@ -757,7 +757,7 @@ footer {
 }
 
 .float-item.highlight {
-  color: #25D366;
+  color: #128C7E; /* Verde mais escuro para contraste no fundo branco */
 }
 
 @media (max-width: 768px) {
