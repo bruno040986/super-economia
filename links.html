@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links | Supermercado Economia</title>
+    <link rel="icon" type="image/webp" href="/assets/images/favicon-economia.webp">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    
+    <style>
+        body {
+            background: var(--gradient-overlay), url('/assets/images/fachada-economia.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            color: var(--color-white);
+        }
+        
+        .links-container {
+            width: 100%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius-lg);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .links-logo {
+            width: 150px;
+            margin: 0 auto 1.5rem;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+        }
+
+        .links-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .links-subtitle {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .link-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            width: 100%;
+            padding: 1.2rem;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--color-primary);
+            border-radius: var(--border-radius-md);
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            text-transform: none;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-link:hover {
+            transform: scale(1.02);
+            background: var(--color-white);
+            color: var(--color-secondary);
+        }
+
+        .btn-link i {
+            font-size: 1.3rem;
+        }
+
+        .btn-link.whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .btn-link.whatsapp:hover {
+            background: #20BA56;
+            color: white;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-icons a {
+            color: var(--color-white);
+            font-size: 1.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+            color: var(--color-secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="links-container">
+        <img src="/assets/images/logotipo-economia.webp" alt="Supermercado Economia" class="links-logo">
+        <h1 class="links-title">Supermercado Economia</h1>
+        <p class="links-subtitle">Preço baixo, variedade e atendimento de confiança.</p>
+
+        <div class="link-buttons">
+            <a href="https://wa.me/556131426915" target="_blank" class="btn-link whatsapp">
+                <i class="fab fa-whatsapp"></i> Falar com Atendente
+            </a>
+            <a href="https://wa.me/556131426915" target="_blank" class="btn-link">
+                <i class="fas fa-tags"></i> Grupo de Ofertas VIP
+            </a>
+            <a href="https://www.instagram.com/supermercadodeconomia/" target="_blank" class="btn-link">
+                <i class="fab fa-instagram"></i> Siga nosso Instagram
+            </a>
+            <a href="https://share.google/dJvToHUpIHeY1IPNT" target="_blank" class="btn-link">
+                <i class="fas fa-map-marker-alt"></i> Como Chegar
+            </a>
+            <a href="index.html" class="btn-link">
+                <i class="fas fa-globe"></i> Site Oficial
+            </a>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/supermercadodeconomia/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/556131426915" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        
+        <p style="margin-top: 2rem; font-size: 0.8rem; opacity: 0.8;">
+            Seg a Sáb: 07h às 21h30 | Dom: 07h às 18h
+        </p>
+    </div>
+
+</body>
+</html>
