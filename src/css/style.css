@@ -239,6 +239,13 @@ header.scrolled .menu-toggle {
   padding: calc(var(--header-height) + 2rem) 1rem 4rem;
 }
 
+/* Fix para iOS (iPhone/iPad): background-attachment fixed causa bug na imagem */
+@supports (-webkit-touch-callout: none) {
+  .hero {
+    background-attachment: scroll;
+  }
+}
+
 .hero-content {
   max-width: 800px;
   margin-top: 10vh;
