@@ -1,6 +1,6 @@
 # Supermercado Economia - Site Institucional
 
-Site institucional oficial do **Supermercado Economia**, localizado no bairro Parque Esplanada II, em Valparaíso de Goiás. Desenvolvido com foco em alta performance, responsividade (mobile-first) e facilidade de manutenção.
+Site institucional para o **Supermercado Economia**, localizado no bairro Parque Esplanada II, em Valparaíso de Goiás. Desenvolvido com foco em alta performance, responsividade (mobile-first) e facilidade de manutenção.
 
 ## 🚀 Tecnologias Utilizadas
 
