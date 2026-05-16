@@ -14,8 +14,15 @@
     <meta property="og:locale" content="pt_BR">
     <link rel="icon" type="image/webp" href="/assets/images/favicon-economia.webp">
     
+    <!-- Preconnects & Preloads -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="image" href="/assets/images/fachada-economia.webp">
+    
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <!-- Styles -->
     <link rel="stylesheet" href="/src/css/style.css">
@@ -26,7 +33,7 @@
     <header>
         <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="/assets/images/logotipo-economia.webp" alt="Logotipo Supermercado Economia" loading="lazy">
+                <img src="/assets/images/logotipo-economia.webp" alt="Logotipo Supermercado Economia" width="250" height="188" fetchpriority="high">
             </a>
             <button class="menu-toggle" aria-label="Abrir Menu">
                 <i class="fas fa-bars"></i>
@@ -79,7 +86,7 @@
                 <p>Nossa tradição se constrói todos os dias, com compromisso, organização e, acima de tudo, respeito pela comunidade que nos acolheu.</p>
             </div>
             <div class="sobre-img hidden">
-                <img src="/assets/images/frente-de-caixa-economia.webp" alt="Frente de caixa do Supermercado Economia" loading="lazy">
+                <img src="/assets/images/frente-de-caixa-economia.webp" alt="Frente de caixa do Supermercado Economia" width="640" height="1138" loading="lazy">
             </div>
         </div>
     </section>
@@ -132,7 +139,7 @@
             <div class="dep-grid">
                 <!-- Hortifruti (Imagem) -->
                 <div class="dep-card hidden">
-                    <img src="/assets/images/hortifruti-economia.webp" alt="Hortifruti" loading="lazy">
+                    <img src="/assets/images/hortifruti-economia.webp" alt="Hortifruti" width="640" height="1138" loading="lazy">
                     <div class="dep-overlay">
                         <h3>Hortifruti</h3>
                         <p>Frutas e verduras sempre fresquinhas.</p>
@@ -150,7 +157,7 @@
 
                 <!-- Açougue (Imagem) -->
                 <div class="dep-card hidden">
-                    <img src="/assets/images/acougue-economia.webp" alt="Açougue" loading="lazy">
+                    <img src="/assets/images/acougue-economia.webp" alt="Açougue" width="900" height="1600" loading="lazy">
                     <div class="dep-overlay">
                         <h3>Açougue</h3>
                         <p>Cortes selecionados e carnes de qualidade.</p>
@@ -168,7 +175,7 @@
 
                 <!-- Resfriados (Imagem) -->
                 <div class="dep-card hidden">
-                    <img src="/assets/images/resfriados-economia.webp" alt="Resfriados" loading="lazy">
+                    <img src="/assets/images/resfriados-economia.webp" alt="Resfriados" width="900" height="1600" loading="lazy">
                     <div class="dep-overlay">
                         <h3>Resfriados</h3>
                         <p>Laticínios e frios com o melhor sabor.</p>
@@ -186,7 +193,7 @@
 
                 <!-- Congelados (Imagem) -->
                 <div class="dep-card hidden">
-                    <img src="/assets/images/congelados-economia.webp" alt="Congelados" loading="lazy">
+                    <img src="/assets/images/congelados-economia.webp" alt="Congelados" width="1600" height="900" loading="lazy">
                     <div class="dep-overlay">
                         <h3>Congelados</h3>
                         <p>Praticidade e sabor a qualquer hora.</p>
@@ -204,7 +211,7 @@
 
                 <!-- Padaria (Imagem) -->
                 <div class="dep-card hidden">
-                    <img src="/assets/images/padaria-economia.webp" alt="Padaria" loading="lazy">
+                    <img src="/assets/images/padaria-economia.webp" alt="Padaria" width="900" height="1600" loading="lazy">
                     <div class="dep-overlay">
                         <h3>Padaria</h3>
                         <p>Pães quentinhos e delícias diárias.</p>
@@ -222,7 +229,7 @@
 
                 <!-- Limpeza (Imagem) -->
                 <div class="dep-card hidden">
-                    <img src="/assets/images/corredor-limpeza-economia.webp" alt="Limpeza" loading="lazy">
+                    <img src="/assets/images/corredor-limpeza-economia.webp" alt="Limpeza" width="900" height="1600" loading="lazy">
                     <div class="dep-overlay">
                         <h3>Limpeza</h3>
                         <p>Produtos eficientes para o seu lar.</p>
@@ -308,7 +315,7 @@
     <footer>
         <div class="container footer-grid">
             <div class="footer-col">
-                <img src="/assets/images/logotipo-economia.webp" alt="Supermercado Economia" class="footer-logo" loading="lazy">
+                <img src="/assets/images/logotipo-economia.webp" alt="Supermercado Economia" class="footer-logo" width="250" height="188" loading="lazy">
                 <p style="opacity: 0.8; font-size: 0.9rem; margin-bottom: 1rem;">O supermercado do Parque Esplanada II em Valparaíso de Goiás/GO que une preço baixo, variedade e atendimento de confiança.</p>
                 <div class="footer-social">
                     <a href="https://www.instagram.com/supermercadodeconomia/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -344,26 +351,26 @@
             <div class="footer-col">
                 <h4>Formas de Pagamento</h4>
                 <div class="pagamentos">
-                    <img src="/assets/images/alelo.svg" alt="Alelo" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/amex.svg" alt="Amex" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/diners.svg" alt="Diners Club" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/ecx-card.svg" alt="ECX Card" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/elo.svg" alt="Elo" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/good-card.svg" alt="Good Card" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/hiper.svg" alt="Hiper" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/hipercard.svg" alt="Hipercard" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/ifood-beneficios.svg" alt="iFood Benefícios" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/maestro.svg" alt="Maestro" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/mastercard.svg" alt="Mastercard" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/picpay.svg" alt="PicPay" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/pix.svg" alt="Pix" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/pluxee.svg" alt="Pluxee" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/ticket.svg" alt="Ticket" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/up.svg" alt="UP" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/usecred.svg" alt="Usecred" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/valecard.svg" alt="ValeCard" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/visa.svg" alt="Visa" class="pagamento-img" loading="lazy">
-                    <img src="/assets/images/vr.svg" alt="VR" class="pagamento-img" loading="lazy">
+                    <img src="/assets/images/alelo.svg" alt="Alelo" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/amex.svg" alt="Amex" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/diners.svg" alt="Diners Club" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/ecx-card.svg" alt="ECX Card" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/elo.svg" alt="Elo" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/good-card.svg" alt="Good Card" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/hiper.svg" alt="Hiper" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/hipercard.svg" alt="Hipercard" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/ifood-beneficios.svg" alt="iFood Benefícios" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/maestro.svg" alt="Maestro" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/mastercard.svg" alt="Mastercard" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/picpay.svg" alt="PicPay" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/pix.svg" alt="Pix" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/pluxee.svg" alt="Pluxee" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/ticket.svg" alt="Ticket" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/up.svg" alt="UP" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/usecred.svg" alt="Usecred" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/valecard.svg" alt="ValeCard" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/visa.svg" alt="Visa" class="pagamento-img" width="50" height="35" loading="lazy">
+                    <img src="/assets/images/vr.svg" alt="VR" class="pagamento-img" width="50" height="35" loading="lazy">
                 </div>
             </div>
         </div>
