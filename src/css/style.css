@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap');
+/* Google Fonts import removido para otimização - carregado no index.html */
 @import './variables.css';
 
 /* Reset Básico */
@@ -757,7 +757,7 @@ footer {
 }
 
 .float-item.highlight {
-  color: #128C7E; /* Verde mais escuro para contraste no fundo branco */
+  color: #075E54; /* Verde escuro máximo do WhatsApp para garantir contraste 4.5:1 */
 }
 
 @media (max-width: 768px) {
