@@ -14,11 +14,10 @@
     <meta property="og:locale" content="pt_BR">
     <link rel="icon" type="image/webp" href="/assets/images/favicon-economia.webp">
     
-    <!-- Preconnects & Preloads -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <!-- Preloads (quebra a cadeia de dependência da rede) -->
     <link rel="preload" as="image" href="/assets/images/fachada-economia.webp">
-    
-    <!-- Google Fonts -->
+    <link rel="preload" as="font" type="font/woff2" href="/assets/webfonts/gf-a6f395c1.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/webfonts/gf-e56e84e5.woff2" crossorigin>
     
     
     <!-- Icons -->
@@ -62,9 +61,7 @@
       @media(max-width:768px){.nav-links{position:absolute;top:100%;left:0;width:100%;background:var(--color-white);flex-direction:column;padding:2rem;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-150%);opacity:0;visibility:hidden;transition:var(--transition-normal)}.nav-links.active{transform:translateY(0);opacity:1;visibility:visible}.nav-links a{color:var(--color-primary);text-shadow:none;font-size:1.1rem}.nav-links a.btn{color:var(--color-white)}.menu-toggle{display:block}}
     </style>
 
-    <!-- Styles (deferred) -->
-    <link rel="preload" href="/src/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/src/css/style.css"></noscript>
+    <!-- Full styles loaded async via main.js -->
 </head>
 <body>
 
@@ -126,7 +123,7 @@
                 <p>Nossa tradição se constrói todos os dias, com compromisso, organização e, acima de tudo, respeito pela comunidade que nos acolheu.</p>
             </div>
             <div class="sobre-img hidden">
-                <img src="/assets/images/frente-de-caixa-economia.webp" alt="Frente de caixa do Supermercado Economia" width="400" height="711" loading="lazy">
+                <img src="/assets/images/frente-de-caixa-economia.webp" alt="Frente de caixa do Supermercado Economia" width="364" height="647" loading="lazy">
             </div>
         </div>
     </section>

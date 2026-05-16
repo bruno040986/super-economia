@@ -1,3 +1,5 @@
+import '../css/style.css';
+
 document.addEventListener('DOMContentLoaded', () => {
   // === NAVBAR SCROLL EFFECT ===
   const header = document.querySelector('header');
