@@ -14,13 +14,20 @@ if (document.adoptedStyleSheets !== undefined) {
 document.addEventListener('DOMContentLoaded', () => {
   // === NAVBAR SCROLL EFFECT ===
   const header = document.querySelector('header');
+  let ticked = false;
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+    if (!ticked) {
+      window.requestAnimationFrame(() => {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+        ticked = false;
+      });
+      ticked = true;
     }
-  });
+  }, { passive: true });
 
   // === MOBILE MENU TOGGLE ===
   const menuToggle = document.querySelector('.menu-toggle');
